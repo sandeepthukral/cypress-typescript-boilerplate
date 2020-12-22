@@ -5,13 +5,16 @@
   "dependencies": {},
   "devDependencies": {
     "cypress": "^5.4.0",
+    "mocha-allure-reporter": "^1.4.0",
     "tslint": "^6.1.3",
     "typescript": "^4.0.3"
   },
   "scripts": {
     "cypress:run": "cypress run",
     "cypress:open": "cypress open",
-    "lint": "tslint 'cypress/**/*.ts'"
+    "lint": "tslint 'cypress/**/*.ts'",
+    "test:allure": "cypress run -b chrome -r mocha-allure-reporter",
+    "report": "allure generate allure-results --clean -o allure-report && allure open allure-report"
   },
   "author": "Sandeep Singh Thukral sandeepthukral@gmail.com",
   "license": "ISC"
