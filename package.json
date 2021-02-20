@@ -4,7 +4,7 @@
   "description": "Boilerplate code for starting Cypress with TypeScript",
   "dependencies": {},
   "devDependencies": {
-    "cypress": "^5.4.0",
+    "cypress": "6.5.0",
     "mocha-allure-reporter": "^1.4.0",
     "tslint": "^6.1.3",
     "typescript": "^4.0.3"
